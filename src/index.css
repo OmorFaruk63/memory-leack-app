@@ -1,0 +1,32 @@
+:root {
+  --bg: #07090c;
+  --bg-top: #2f1005;
+  --ink: #f9efe3;
+  --muted: #cdbda9;
+  --line: rgba(255, 196, 145, 0.32);
+  --mono: 'IBM Plex Mono', 'Menlo', 'Consolas', monospace;
+  --display: 'Space Grotesk', 'Avenir Next', 'Segoe UI', sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--display);
+  background:
+    radial-gradient(circle at 22% 12%, rgba(252, 98, 52, 0.32), transparent 35%),
+    radial-gradient(circle at 80% 85%, rgba(255, 193, 7, 0.18), transparent 34%),
+    linear-gradient(180deg, var(--bg-top), var(--bg));
+}
+
+#root {
+  min-height: 100vh;
+}

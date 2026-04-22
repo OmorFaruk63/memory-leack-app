@@ -1,0 +1,147 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.panel {
+  width: min(920px, 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 28px;
+  background: linear-gradient(
+    170deg,
+    rgba(16, 17, 21, 0.92),
+    rgba(30, 9, 12, 0.88) 50%,
+    rgba(47, 20, 7, 0.86)
+  );
+  box-shadow:
+    0 28px 48px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 161, 101, 0.14);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+}
+
+.subtext {
+  margin-top: 10px;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+input {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  font-family: var(--mono);
+  color: var(--ink);
+  background: rgba(0, 0, 0, 0.34);
+}
+
+input:focus {
+  outline: 2px solid rgba(255, 166, 73, 0.65);
+  outline-offset: 1px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+button {
+  border: 1px solid var(--line);
+  background: rgba(242, 123, 57, 0.14);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-family: var(--mono);
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  background: rgba(242, 123, 57, 0.26);
+}
+
+.warning {
+  background: rgba(255, 184, 51, 0.18);
+}
+
+.danger {
+  background: rgba(255, 76, 76, 0.2);
+}
+
+.stats {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.stats article {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.stats h2 {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.stats p {
+  margin: 6px 0 0;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+
+.status {
+  margin-top: 14px;
+  color: var(--muted);
+  font-family: var(--mono);
+}
+
+.notice {
+  margin-top: 12px;
+  border-left: 3px solid rgba(255, 101, 101, 0.7);
+  padding-left: 10px;
+  color: #ffcfb4;
+}
+
+@media (max-width: 760px) {
+  .grid,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    padding: 20px;
+    border-radius: 18px;
+  }
+}
