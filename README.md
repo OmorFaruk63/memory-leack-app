@@ -1,6 +1,12 @@
-# React + Vite
+# Memory Leak App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live at **[memory.omorfarukdev.me](https://memory.omorfarukdev.me)**
+
+> For full deployment instructions — including how the subdomain is configured and how to update DNS records — see [DEPLOYMENT.md](./DEPLOYMENT.md).
+
+---
+
+This project is built with React and Vite with HMR and ESLint rules.
 
 Currently, two official plugins are available:
 
