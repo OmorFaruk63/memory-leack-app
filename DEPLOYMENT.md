@@ -100,7 +100,7 @@ After DNS propagates:
 
 | Symptom | Fix |
 |---------|-----|
-| 404 on the subdomain | DNS has not propagated yet — wait up to 48 h and retry |
+| 404 on the subdomain | DNS has not propagated yet — wait up to 48 hours and retry |
 | "Domain not verified" in GitHub Pages | Make sure the CNAME record value ends with `.github.io` and matches your GitHub username |
 | HTTPS certificate pending | GitHub Pages can take up to 24 h to issue a certificate after DNS is verified |
 | Build fails in Actions | Check the **Actions** tab in GitHub for the error log; usually a missing dependency |
